@@ -58,3 +58,6 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  - Environment
+  - Hints
+  - 'Player '
