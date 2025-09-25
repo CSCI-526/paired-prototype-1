@@ -47,7 +47,8 @@ public class LevelManager : MonoBehaviour
         currentRespawnPos = pos;
     }
 
-    // Find the player and set its position to the current respwan point.
+    // Find the player and set its position to the current respawn point.
+    // Called by Hazard script.
     public void RespawnPlayer()
     {
         var player = GameObject.FindGameObjectsWithTag("Player")[0];
