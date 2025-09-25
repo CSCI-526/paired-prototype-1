@@ -13,6 +13,18 @@ public class Gate : MonoBehaviour
 
     private bool isOpen = false;
 
+
+    // Initialize references to colliders and gate states.
+    private void Reset()
+    {
+        solidCollider = transform.Find("SolidCollider")?.GetComponent<BoxCollider2D>();
+        triggerZone = transform.Find("TriggerZone")?.GetComponent<BoxCollider2D>();
+        closedGate = transform.Find("Closed")?.gameObject;
+        openedGate = transform.Find("Opened")?.gameObject;
+
+        if (triggerZone) triggerZone.isTrigger = true;
+    }
+
     // Open the gate
     // Closed gate -> Opened gate, disable solid collider.
     // Called by LevelManager script.
@@ -40,6 +52,7 @@ public class Gate : MonoBehaviour
 
     }
 
+    // Level complete when player enters the open gate.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isOpen) return;

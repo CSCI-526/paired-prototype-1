@@ -9,6 +9,7 @@ public class PulseLight : MonoBehaviour
     public float speed = 2f;
 
 
+    // Initialize the light2D reference.
     void Reset()
     {
         if (light2D == null)

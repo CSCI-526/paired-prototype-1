@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
 
     public event System.Action OnAllKeyFragmentCollected;
 
+
     // Initialize the instance and set the spawn point.
     void Awake()
     {

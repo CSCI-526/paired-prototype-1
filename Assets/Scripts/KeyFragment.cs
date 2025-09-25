@@ -10,6 +10,7 @@ public class KeyFragment : MonoBehaviour
     [Header("Collect Effect")]
     public GameObject collectEffect;
 
+
     // Get components and set key fragments' initial state
     void Awake()
     {
