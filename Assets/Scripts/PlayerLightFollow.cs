@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerLightFollow : MonoBehaviour
 {
-    public RoleSwitcher switcher;     // 拖 Players 上的 RoleSwitcher
+    public RoleSwitcher switcher;    
     public Vector3 offset = new Vector3(0, 0, 0);
 
     void LateUpdate()
