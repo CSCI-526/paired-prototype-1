@@ -474,7 +474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpForce: 13
   climbSpeed: 5
   rb: {fileID: 0}
   groundMask:
