@@ -275,7 +275,11 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   flagRenderer: {fileID: 1819184097}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   currentColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+  currentColor: {r: 0.5568628, g: 0.89411765, b: 0.3764706, a: 1}
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   pastColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
 --- !u!61 &97838575
 BoxCollider2D:
@@ -323,6 +327,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1403027, y: 2.0021658}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &174666758
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +359,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 288830928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &198813554
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectEffect: {fileID: 2616449118186953810, guid: 58d4448b6b2a842f9bfaf09816da77fb, type: 3}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &330280141
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +848,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 576242162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &514397995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,6 +3965,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   - component: {fileID: 576242162}
   - component: {fileID: 576242161}
   - component: {fileID: 576242160}
@@ -3963,16 +3974,28 @@ GameObject:
   m_Layer: 8
   m_Name: Fighter
   m_TagString: Player
+=======
+  - component: {fileID: 580175408}
+  m_Layer: 0
+  m_Name: FlagUp
+  m_TagString: Untagged
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!114 &576242158
 MonoBehaviour:
+=======
+--- !u!4 &580175408
+Transform:
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   m_GameObject: {fileID: 576242157}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4152,6 +4175,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   m_GameObject: {fileID: 580175407}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
@@ -13907,6 +13932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectEffect: {fileID: 2616449118186953810, guid: 58d4448b6b2a842f9bfaf09816da77fb, type: 3}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &1223463009
 GameObject:
   m_ObjectHideFlags: 0
@@ -14006,6 +14032,8 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &1303027610
 GameObject:
   m_ObjectHideFlags: 0
@@ -14021,7 +14049,11 @@ GameObject:
   - component: {fileID: 1303027615}
   - component: {fileID: 1303027614}
   - component: {fileID: 1303027617}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   m_Layer: 7
+=======
+  m_Layer: 0
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   m_Name: Hazard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14344,26 +14376,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 3, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 4, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 5, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -14424,26 +14436,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -2, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 8, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -14486,10 +14478,10 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {fileID: 11400000, guid: 8f94049a07c8240aab9a9692bbecfbb6, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {fileID: 7482667652216324306, guid: 847477e7803d741e898efb494e51e682, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
@@ -14510,7 +14502,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 20
+  - m_RefCount: 16
     m_Data:
       e00: -1
       e01: 0
@@ -14565,7 +14557,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -14632,23 +14624,11 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1303027616}
     m_ColliderPaths:
-    - - X: -5000000
+    - - X: 105000000
         Y: 100000000
-      - X: -15000000
+      - X: 95000000
         Y: 100000000
-      - X: -10000000
-        Y: 91328128
-    - - X: -15000000
-        Y: 100000000
-      - X: -25000000
-        Y: 100000000
-      - X: -20000000
-        Y: 91328128
-    - - X: 85000000
-        Y: 100000000
-      - X: 75000000
-        Y: 100000000
-      - X: 80000000
+      - X: 100000000
         Y: 91328128
     - - X: 95000000
         Y: 100000000
@@ -14656,11 +14636,11 @@ CompositeCollider2D:
         Y: 100000000
       - X: 90000000
         Y: 91328128
-    - - X: 105000000
+    - - X: 85000000
         Y: 100000000
-      - X: 95000000
+      - X: 75000000
         Y: 100000000
-      - X: 100000000
+      - X: 80000000
         Y: 91328128
     - - X: 190000000
         Y: 95000000
@@ -14692,12 +14672,6 @@ CompositeCollider2D:
         Y: 50000000
       - X: 190000000
         Y: 45000000
-    - - X: 45000000
-        Y: 50000000
-      - X: 35000000
-        Y: 50000000
-      - X: 40000000
-        Y: 41328124
     - - X: -145000000
         Y: 50000000
       - X: -155000000
@@ -14715,12 +14689,6 @@ CompositeCollider2D:
       - X: -175000000
         Y: 50000000
       - X: -170000000
-        Y: 41328124
-    - - X: 35000000
-        Y: 50000000
-      - X: 25000000
-        Y: 50000000
-      - X: 30000000
         Y: 41328124
     - - X: 55000000
         Y: 50000000
@@ -14871,12 +14839,6 @@ CompositeCollider2D:
     - - {x: 9.999971, y: 9.132862}
       - {x: 10.499943, y: 10}
       - {x: 9.500029, y: 9.99995}
-    - - {x: -2.0000288, y: 9.132862}
-      - {x: -1.5000577, y: 10}
-      - {x: -2.4999712, y: 9.99995}
-    - - {x: -1.000029, y: 9.132862}
-      - {x: -0.5000576, y: 10}
-      - {x: -1.4999712, y: 9.99995}
     - - {x: 18.99995, y: 8.500029}
       - {x: 18.99995, y: 9.499971}
       - {x: 18.132862, y: 8.999971}
@@ -14892,12 +14854,6 @@ CompositeCollider2D:
     - - {x: 18.99995, y: 4.500029}
       - {x: 18.99995, y: 5.4999714}
       - {x: 18.132862, y: 4.9999714}
-    - - {x: 2.9999712, y: 4.1328626}
-      - {x: 3.4999425, y: 5}
-      - {x: 2.5000288, y: 4.99995}
-    - - {x: 3.9999712, y: 4.1328626}
-      - {x: 4.4999423, y: 5}
-      - {x: 3.5000288, y: 4.99995}
     - - {x: 4.9999714, y: 4.1328626}
       - {x: 5.4999423, y: 5}
       - {x: 4.500029, y: 4.99995}
@@ -15088,6 +15044,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 97838573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &1344631738
 GameObject:
   m_ObjectHideFlags: 0
@@ -15119,6 +15076,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 576242162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &1348285092
 GameObject:
   m_ObjectHideFlags: 0
@@ -15384,8 +15343,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 1384218264}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   originalIntensity: 0.4
   amplitude: 1
+=======
+  originalIntensity: 0.1
+  amplitude: 0.5
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   speed: 1.5
 --- !u!1 &1426615000
 GameObject:
@@ -15520,7 +15484,10 @@ MonoBehaviour:
   gate: {fileID: 1132945950}
   spawnPoint: {fileID: 1579278559}
   fragment2: {fileID: 330085692}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   freezeSeconds: 1
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!4 &1525799911
 Transform:
   m_ObjectHideFlags: 0
@@ -15536,6 +15503,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &1544418328
 GameObject:
   m_ObjectHideFlags: 0
@@ -15585,6 +15553,8 @@ Transform:
   - {fileID: 1223463010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &1579278558
 GameObject:
   m_ObjectHideFlags: 0
@@ -15868,7 +15838,11 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   flagRenderer: {fileID: 198813556}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   currentColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+  currentColor: {r: 0.5568628, g: 0.89411765, b: 0.3764706, a: 1}
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
   pastColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
 --- !u!61 &1852371345
 BoxCollider2D:
@@ -15916,6 +15890,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.149353, y: 2.0099287}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
 --- !u!1 &1947741987
 GameObject:
   m_ObjectHideFlags: 0
@@ -15947,6 +15922,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 288830928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
 --- !u!1 &1954894567
 GameObject:
   m_ObjectHideFlags: 0
@@ -16179,4 +16156,7 @@ SceneRoots:
   - {fileID: 97838573}
   - {fileID: 1132945949}
   - {fileID: 1525799911}
+<<<<<<< Updated upstream:Assets/Scenes/map.unity
   - {fileID: 1544418330}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/map-leah.unity
