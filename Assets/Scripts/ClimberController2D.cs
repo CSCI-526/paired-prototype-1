@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class ClimberController2D : MonoBehaviour
 {
-    [Header("Move / Jump / Climb")]
+    [Header("Move / Climb")]
     public float moveSpeed = 8f;
-    public float jumpForce = 14f;
     public float climbSpeed = 5f;
 
     [Header("Refs")]
@@ -20,10 +19,6 @@ public class ClimberController2D : MonoBehaviour
 
     float inputX = 0f;
     bool gravityFlipped = false;
-
-    bool canJump = false;
-    Vector2 bestNormal = Vector2.up;
-
     bool touchingWall = false;
 
     void Awake()
@@ -39,16 +34,6 @@ public class ClimberController2D : MonoBehaviour
         inputX = 0f;
         if (Input.GetKey(KeyCode.A)) inputX = -1f;
         if (Input.GetKey(KeyCode.D)) inputX = 1f;
-
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
-        {
-            Vector2 dir = bestNormal;
-            Vector2 gdir = Physics2D.gravity.normalized * Mathf.Sign(rb.gravityScale);
-            if (Vector2.Dot(dir, gdir) > 0f) dir = -dir;
-
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y);
-            rb.AddForce(dir.normalized * jumpForce, ForceMode2D.Impulse);
-        }
 
         bool onWall = touchingWall || ProbeWall();
         if (onWall && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
@@ -86,9 +71,7 @@ public class ClimberController2D : MonoBehaviour
 
         if (!rb.IsTouchingLayers(groundMask))
         {
-            canJump = false;
             touchingWall = false;
-            bestNormal = gravityFlipped ? Vector2.down : Vector2.up;
         }
     }
 
@@ -96,26 +79,13 @@ public class ClimberController2D : MonoBehaviour
     {
         if (((1 << collision.collider.gameObject.layer) & groundMask) == 0) return;
 
-        Vector2 gdir = Physics2D.gravity.normalized * Mathf.Sign(rb.gravityScale) * -1f;
-        float bestDot = -1f;
-
         bool wallNow = false;
-
         foreach (var c in collision.contacts)
         {
             Vector2 n = c.normal;
             if (Mathf.Abs(n.x) > 0.7f) wallNow = true;
-
-            float d = Vector2.Dot(n.normalized, gdir.normalized);
-            if (d > bestDot)
-            {
-                bestDot = d;
-                bestNormal = n;
-            }
         }
-
         touchingWall = wallNow || touchingWall;
-        canJump = true;
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -141,10 +111,5 @@ public class ClimberController2D : MonoBehaviour
         Vector2 c = transform.position;
         Gizmos.DrawWireSphere(c + Vector2.left * wallProbeOffset,  wallProbeRadius);
         Gizmos.DrawWireSphere(c + Vector2.right * wallProbeOffset, wallProbeRadius);
-
-        Gizmos.color = Color.yellow;
-        Vector3 p = transform.position + (Vector3)(bestNormal.normalized * 0.6f);
-        Gizmos.DrawLine(transform.position, p);
-        Gizmos.DrawSphere(p, 0.04f);
     }
 }
