@@ -27,8 +27,5 @@ public class PulseLight : MonoBehaviour
         light2D.intensity = originalIntensity + amplitude * t;
         
     }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
+
