@@ -275,7 +275,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   flagRenderer: {fileID: 1819184097}
-  currentColor: {r: 1, g: 1, b: 1, a: 1}
+  currentColor: {r: 0.5568628, g: 0.89411765, b: 0.3764706, a: 1}
   pastColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
 --- !u!61 &97838575
 BoxCollider2D:
@@ -13734,26 +13734,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 3, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 4, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 5, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -13814,26 +13794,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -2, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 8, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -13876,10 +13836,10 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {fileID: 11400000, guid: 8f94049a07c8240aab9a9692bbecfbb6, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {fileID: 7482667652216324306, guid: 847477e7803d741e898efb494e51e682, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
@@ -13900,7 +13860,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 20
+  - m_RefCount: 16
     m_Data:
       e00: -1
       e01: 0
@@ -13955,7 +13915,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 38
+  - m_RefCount: 34
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -14022,23 +13982,11 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1303027616}
     m_ColliderPaths:
-    - - X: -5000000
+    - - X: 105000000
         Y: 100000000
-      - X: -15000000
+      - X: 95000000
         Y: 100000000
-      - X: -10000000
-        Y: 91328128
-    - - X: -15000000
-        Y: 100000000
-      - X: -25000000
-        Y: 100000000
-      - X: -20000000
-        Y: 91328128
-    - - X: 85000000
-        Y: 100000000
-      - X: 75000000
-        Y: 100000000
-      - X: 80000000
+      - X: 100000000
         Y: 91328128
     - - X: 95000000
         Y: 100000000
@@ -14046,11 +13994,11 @@ CompositeCollider2D:
         Y: 100000000
       - X: 90000000
         Y: 91328128
-    - - X: 105000000
+    - - X: 85000000
         Y: 100000000
-      - X: 95000000
+      - X: 75000000
         Y: 100000000
-      - X: 100000000
+      - X: 80000000
         Y: 91328128
     - - X: 190000000
         Y: 95000000
@@ -14082,12 +14030,6 @@ CompositeCollider2D:
         Y: 50000000
       - X: 190000000
         Y: 45000000
-    - - X: 45000000
-        Y: 50000000
-      - X: 35000000
-        Y: 50000000
-      - X: 40000000
-        Y: 41328124
     - - X: -145000000
         Y: 50000000
       - X: -155000000
@@ -14105,12 +14047,6 @@ CompositeCollider2D:
       - X: -175000000
         Y: 50000000
       - X: -170000000
-        Y: 41328124
-    - - X: 35000000
-        Y: 50000000
-      - X: 25000000
-        Y: 50000000
-      - X: 30000000
         Y: 41328124
     - - X: 55000000
         Y: 50000000
@@ -14261,12 +14197,6 @@ CompositeCollider2D:
     - - {x: 9.999971, y: 9.132862}
       - {x: 10.499943, y: 10}
       - {x: 9.500029, y: 9.99995}
-    - - {x: -2.0000288, y: 9.132862}
-      - {x: -1.5000577, y: 10}
-      - {x: -2.4999712, y: 9.99995}
-    - - {x: -1.000029, y: 9.132862}
-      - {x: -0.5000576, y: 10}
-      - {x: -1.4999712, y: 9.99995}
     - - {x: 18.99995, y: 8.500029}
       - {x: 18.99995, y: 9.499971}
       - {x: 18.132862, y: 8.999971}
@@ -14282,12 +14212,6 @@ CompositeCollider2D:
     - - {x: 18.99995, y: 4.500029}
       - {x: 18.99995, y: 5.4999714}
       - {x: 18.132862, y: 4.9999714}
-    - - {x: 2.9999712, y: 4.1328626}
-      - {x: 3.4999425, y: 5}
-      - {x: 2.5000288, y: 4.99995}
-    - - {x: 3.9999712, y: 4.1328626}
-      - {x: 4.4999423, y: 5}
-      - {x: 3.5000288, y: 4.99995}
     - - {x: 4.9999714, y: 4.1328626}
       - {x: 5.4999423, y: 5}
       - {x: 4.500029, y: 4.99995}
@@ -15177,7 +15101,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   flagRenderer: {fileID: 198813556}
-  currentColor: {r: 1, g: 1, b: 1, a: 1}
+  currentColor: {r: 0.5568628, g: 0.89411765, b: 0.3764706, a: 1}
   pastColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
 --- !u!61 &1852371345
 BoxCollider2D:
