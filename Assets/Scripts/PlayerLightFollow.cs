@@ -2,14 +2,21 @@ using UnityEngine;
 
 public class PlayerLightFollow : MonoBehaviour
 {
-    public RoleSwitcher switcher;    
-    public Vector3 offset = new Vector3(0, 0, 0);
+    public Transform target;         
+    public Vector3 offset = Vector3.zero;
+
+    void Awake()
+    {
+        if (!target)
+        {
+            var go = GameObject.FindWithTag("Player"); 
+            if (go) target = go.transform;
+        }
+    }
 
     void LateUpdate()
     {
-        if (!switcher) switcher = FindObjectOfType<RoleSwitcher>();
-        var t = switcher ? switcher.GetActiveTarget() : null;
-        if (!t) return;
-        transform.position = t.position + offset;
+        if (!target) return;
+        transform.position = target.position + offset;
     }
 }

@@ -7,9 +7,9 @@ public class FighterController2D : MonoBehaviour
     public Rigidbody2D rb;
 
     [Header("Shoot")]
-    public GameObject arrowPrefab;   
+    public GameObject arrowPrefab;  
     public float arrowSpeed = 16f;
-    public Transform firePoint;     
+    public Transform firePoint;      
 
     float inputX;
 
