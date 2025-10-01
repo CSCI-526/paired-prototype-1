@@ -6,23 +6,17 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    [Header("Keys / Gate")]
-    private int totalKeyFragments = 2;
-    private int collectedKeyFragments = 0;
+    [Header("Gate")]
     public Gate gate;
 
     [Header("Respawn Point")]
     public Transform spawnPoint;
     private Vector3 currentRespawnPos;
 
-    [Header("Fragment 2")]
-    public GameObject fragment2;
-
     [Header("Respawn Freeze")]
     [SerializeField] private float freezeSeconds = 1f;
     bool isRespawning = false;
 
-    public event System.Action OnAllKeyFragmentCollected;
 
     void Awake()
     {
@@ -76,10 +70,6 @@ public class LevelManager : MonoBehaviour
                 rb.simulated = false;
             }
 
-            var f = p.GetComponent<FighterController2D>();
-            var c = p.GetComponent<ClimberController2D>();
-            if (f) f.enabled = false;
-            if (c) c.enabled = false;
         }
 
         yield return new WaitForSeconds(freezeSeconds);
@@ -92,30 +82,10 @@ public class LevelManager : MonoBehaviour
             var rb = p.GetComponent<Rigidbody2D>();
             if (rb) rb.simulated = true;
 
-            var f = p.GetComponent<FighterController2D>();
-            var c = p.GetComponent<ClimberController2D>();
-            if (f) f.enabled = true;
-            if (c) c.enabled = true;
+
         }
 
         isRespawning = false;
     }
 
-    public void CollectKeyFragment()
-    {
-        collectedKeyFragments++;
-        if (collectedKeyFragments == totalKeyFragments)
-        {
-            gate?.Open();
-            OnAllKeyFragmentCollected?.Invoke();
-        }
-    }
-
-    public void OnAllEnemiesDefeated()
-    {
-        if (fragment2)
-        {
-            fragment2.SetActive(true);
-        }
-    }
 }
