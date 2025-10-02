@@ -8,6 +8,9 @@ public class Gate : MonoBehaviour
 
     [Header("Gate States")]
     public GameObject openedGate;
+    public GameObject levelCompleteUI;
+
+    bool done;
 
 
     // Initialize references to colliders and gate states.
@@ -20,12 +23,15 @@ public class Gate : MonoBehaviour
     }
 
     // Level complete when player enters the open gate.
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
-        {
-            Debug.Log("Level Complete!");
-        }
+        if (done) return;
+        if (!other.CompareTag("Player")) return;
+
+        done = true;
+
+        if (levelCompleteUI)
+            levelCompleteUI.SetActive(true);
     }
     
 }
