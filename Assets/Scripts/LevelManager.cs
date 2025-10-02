@@ -10,12 +10,12 @@ public class LevelManager : MonoBehaviour
     public Gate gate;
 
     [Header("Respawn Point")]
-    public Transform spawnPoint;
+    public Transform defaultSpawn;
     private Vector3 currentRespawnPos;
+    private bool isRespawning = false;
 
     [Header("Respawn Freeze")]
     [SerializeField] private float freezeSeconds = 1f;
-    bool isRespawning = false;
 
 
     void Awake()
@@ -27,19 +27,12 @@ public class LevelManager : MonoBehaviour
         }
         Instance = this;
 
-        if (spawnPoint == null)
-        {
-            Debug.LogError("Spawn Point is not assigned.");
-        }
-        else
-        {
-            currentRespawnPos = spawnPoint.position;
-        }
+        currentRespawnPos = defaultSpawn.position;
     }
 
-    public void SetCheckpoint(Vector3 pos)
+    public void SetActiveCheckpoint(Checkpoint cp)
     {
-        currentRespawnPos = pos;
+        currentRespawnPos = cp.transform.position;
     }
 
     // freeze all players for freezeSeconds, then resume
@@ -98,5 +91,6 @@ public class LevelManager : MonoBehaviour
         isRespawning = false;
     }
 
+    
 
 }
