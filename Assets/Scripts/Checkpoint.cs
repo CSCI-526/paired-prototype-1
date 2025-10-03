@@ -5,6 +5,7 @@ public class Checkpoint : MonoBehaviour
 
     private bool isActivated = false;
 
+    // When player enters, checkpoints trigger.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (isActivated) return;

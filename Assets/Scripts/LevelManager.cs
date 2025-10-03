@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private float freezeSeconds = 1f;
 
 
+    // Initialize
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -30,12 +31,13 @@ public class LevelManager : MonoBehaviour
         currentRespawnPos = defaultSpawn.position;
     }
 
+    // Set the current active checkpoint.
     public void SetActiveCheckpoint(Checkpoint cp)
     {
         currentRespawnPos = cp.transform.position;
     }
 
-    // freeze all players for freezeSeconds, then resume
+    // Freeze all players for freezeSeconds, then resume
     public void RespawnPlayer()
     {
         if (isRespawning) return;
